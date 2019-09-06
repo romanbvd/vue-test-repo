@@ -7,11 +7,16 @@ export default {
     },
     data: function() {
         return {
+            currentMonitorText: "",
             itemsFirst: this.getFirstData(),
             itemsSecond: this.getSecondData()
         }
     },
     methods: {
+        setMonitorValue: function(text){
+            alert(text);
+            this.currentMonitorText = text;
+        },
         getFirstData: function () {
             return [
                 {
